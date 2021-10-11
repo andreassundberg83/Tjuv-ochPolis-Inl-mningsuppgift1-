@@ -67,7 +67,7 @@ namespace Tjuv_ochPolis_Inlämningsuppgift1_
             
             switch (typeOfGame)
             {
-                case 'r': //Game mode "Counting Rounds"
+                case 'r': //Game mode: "Counting Rounds"
                     for (counter = 0; counter < numberOfRounds; counter++)
                     {                        
                         Person.CheckForAction(ref numberOfArrests, ref numberOfThefts);
@@ -76,7 +76,7 @@ namespace Tjuv_ochPolis_Inlämningsuppgift1_
                     }
                     break;
 
-                case 'g': //Game mode "Counting Arrests"                        
+                case 'g': //Game mode: "Counting Arrests"                        
 
                     while (numberOfArrests < numberOfRounds) 
                     {
@@ -87,7 +87,7 @@ namespace Tjuv_ochPolis_Inlämningsuppgift1_
                     } 
                         break;
 
-                case 's': //Game mode "Counting Thefts"                        
+                case 's': //Game mode: "Counting Thefts"                        
                     while (numberOfThefts < numberOfRounds)
                     {                        
                         Person.CheckForAction(ref numberOfArrests, ref numberOfThefts);
